@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    max-width: 60%;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.nav a {
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}
