@@ -1,0 +1,31 @@
+.skillsBlock {
+    height: 100vh;
+    background-color: #a9c96a
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projectImg {
+    width: 300px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.title {
+    background-color: yellow;
+    font-family: Roboto Mono,monospace;
+    font-size: 36px;
+}
+
+.skills {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

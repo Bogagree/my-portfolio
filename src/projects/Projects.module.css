@@ -1,0 +1,26 @@
+.projectsBlock {
+    height: 100vh;
+    background-color: lightskyblue;
+    overflow: hidden;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: yellow;
+    font-family: Roboto Mono,monospace;
+    font-size: 36px;
+}
+
+.projects {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Main.module.css'
-import styleContainer from './../common/styles/Wrapper.module.css'
+import styleContainer from '../common/styles/Container.module.css'
 
 import avatar from "../assets/img/avatar.jpg"
 import SiteButton from "../common/buttons/Site.Button";
@@ -9,8 +9,8 @@ export const Main = () => {
     return (
         <div className={style.main}>
 
+            <div className={styleContainer.container}>
 
-            <div className={styleContainer.wrapper}>
                 <div className={style.mainUp}>
 
                     <div className={style.avatar_container}>
@@ -19,7 +19,7 @@ export const Main = () => {
 
                     <div className={style.bio}>
                         <p className={style.name}>Dmitry Bogatyrev_</p>
-                        <p className={style.work}>frontend developer, QA-engineer</p>
+                        <p className={style.position}>frontend developer, QA-engineer</p>
                         <div className={style.contacts}>
                             <dl className={style.contact_list}>
                                 <dt>Age:</dt>
@@ -70,7 +70,9 @@ export const Main = () => {
                         efficient
                         code using current best practices in Web development.
                     </p>
-                    <SiteButton>Download CV</SiteButton>
+                    <div>
+                        <SiteButton className={style.downloadBtn}>Download CV</SiteButton>
+                    </div>
                 </div>
             </div>
         </div>

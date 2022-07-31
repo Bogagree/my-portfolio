@@ -1,6 +1,6 @@
 .nav {
-    display: flex;
     max-width: 60%;
+    display: flex;
     justify-content: space-between;
     padding-left: 25px;
 }

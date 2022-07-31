@@ -1,0 +1,78 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f1f1f1;
+    margin-left: 0;
+    margin-bottom: 40px;
+    transition: box-shadow .3s;
+    margin-right: 0;
+}
+
+.projectImg {
+    width: 320px;
+}
+
+.textContainer {
+    padding: 50px 50px 40px 30px;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Roboto Mono, monospace;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+
+.projectCard p {
+    font-family: Roboto Mono, monospace;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.tags {
+    padding: 0;
+    margin-left: 10px;
+    gap: 10px;
+    list-style: none;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 14%);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.linkWrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.link {
+    color: #6d56c1;
+    transition: all .3s;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 55px;
+    font-family: Roboto Mono, monospace;
+    font-size: 14px;
+    line-height: 20px;
+
+}
