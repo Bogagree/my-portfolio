@@ -1,7 +1,6 @@
 .default {
     background-color: #6d56c1;
     height: 50px;
-    min-width: 170px;
     border: none;
     border-radius: 25px;
     font-size: 14px;
@@ -14,7 +13,6 @@
     cursor: pointer;
     opacity: 0.5;
 }
-
 
 .error {
     background-color: red;

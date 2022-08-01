@@ -42,14 +42,12 @@ export const Main = () => {
                             <a href="#" target="_blank"><i className={style.VK}></i>VK</a>
                             <a href="#" target="_blank"><i className={style.yandexZen}></i>Zen</a>
                         </p>
-
                     </div>
-
 
                 </div>
 
                 <div className={style.mainDown}>
-                    <h2>Hi_</h2>
+                    <h2 className={style.mainTitle}>Hi_</h2>
                     <p>
                         I am Junior Frontend developer able to build a Web presence from the ground up - from concept,
                         navigation, layout and programming to UX and SEO. <br/>

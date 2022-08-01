@@ -8,9 +8,10 @@ const Testonominals = () => {
         <div className={style.testimonials}>
             <div className={styleContainer.container}>
                 <h2 className={style.title}>Testimonials_</h2>
-                <div className={style.testimonialsBlock}><SiteButton>left</SiteButton>
+                <div className={style.testimonialsBlock}>
+                    <SiteButton className={style.sliderBtn}>left</SiteButton>
                     <span>slider with testonominals here and considering a distance work with a "hire me" button</span>
-                    <SiteButton>right</SiteButton>
+                    <SiteButton className={style.sliderBtn}>right</SiteButton>
                 </div>
             </div>
 

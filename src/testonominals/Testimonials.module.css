@@ -8,10 +8,13 @@
 
 .testimonialsBlock {
     border: 1px solid red;
-    height: 400px;
-    font-size: 55px;
+    min-height: 400px;
     text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.sliderBtn {
+    width: 50px;
 }

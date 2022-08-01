@@ -8,6 +8,8 @@ type ProjectPropsType = {
     title: string
     description: string
     img?: string
+    link: string
+    linkTitle: string
 }
 
 const Project = (props: ProjectPropsType) => {
@@ -17,7 +19,7 @@ const Project = (props: ProjectPropsType) => {
             <img className={style.projectImg} src={project_img} alt="project-img"></img>
 
 
-            <div className={style.textContainer}><h3 className={style.title}>{props.title}</h3>
+            <div className={style.textContainer}><h3 className={style.title}><a href="#">{props.title}</a></h3>
 
                 <span className={style.description}>{props.description}</span>
 
@@ -31,7 +33,7 @@ const Project = (props: ProjectPropsType) => {
                     <li>Redux</li>
                 </ul>
                 <div className={style.linkWrapper}>
-                    <a className={style.link} href="https://allthaiherbs.com/ru">allthaiherbs.com</a>
+                    <a className={style.link} href={props.link}>{props.linkTitle}</a>
                 </div>
             </div>
 

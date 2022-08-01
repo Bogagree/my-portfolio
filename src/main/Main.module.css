@@ -2,29 +2,11 @@
     background-color: #7766a1;
 }
 
-.main h2 {
-    font-family: Roboto Mono,monospace;
-    font-size: 36px;
-}
+/* Start mainUp Style */
 
 .mainUp {
     display: flex;
     flex-wrap: wrap;
-}
-
-.mainDown {
-    padding: 60px 25px;
-    background: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.mainDown p {
-    font-family: Roboto Mono,sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
 }
 
 .avatar_container {
@@ -47,7 +29,7 @@
 .bio {
     color: #fff;
     font-family: Roboto Mono,monospace;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .name {
@@ -80,7 +62,6 @@
     margin-bottom: 0.8rem;
 }
 
-
 .social a {
     padding-left: 10px;
     text-decoration: none;
@@ -90,4 +71,30 @@
 .social a:hover {
     opacity: 0.5;
 }
+/* End mainUp Style */
 
+/* Start mainDown Style */
+
+.mainTitle {
+    font-family: Roboto Mono,monospace;
+    font-size: 36px;
+}
+
+.mainDown {
+    padding: 60px 25px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDown p {
+    font-family: Roboto Mono,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.downloadBtn {
+    min-width: 170px;
+}

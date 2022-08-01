@@ -13,14 +13,20 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <h2 className={style.title}>Projects_</h2>
                 <div className={style.projects}>
-                    <Project title={'Todolist'}
+                    <Project title={'Allthaiherbs'}
                              description={'Lorem ipsum dolor sit amet.'}
+                             link={'https://allthaiherbs.com/ru'}
+                             linkTitle={'allthaiherbs.com'}
+                    />
+                    <Project title={'Social Network'}
+                             description={'Lorem ipsum dolor sit amet.'}
+                             linkTitle={'tagBogNet.pokaNet'}
+                             link={'https://bogagree.github.io/samurai-way-main/'}
                     />
                     <Project title={'Todolist'}
                              description={'Lorem ipsum dolor sit amet.'}
-                    />
-                    <Project title={'Todolist'}
-                             description={'Lorem ipsum dolor sit amet.'}
+                             linkTitle={'myTodoList.pokaNet'}
+                             link={'https://bogagree.github.io/todolist-ts/'}
                     />
                 </div>
             </div>

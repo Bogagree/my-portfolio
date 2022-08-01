@@ -8,12 +8,13 @@
 .formWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .input, .textarea {
     margin-bottom: 15px;
-    width: 100%;
+    width: 280px;
     background-color: transparent;
     border-radius: 3px;
     border: 1px solid mediumpurple;
@@ -24,6 +25,6 @@
     font-family: Roboto Mono,monospace;
 }
 
-.textarea {
-
+.sendBtn {
+    min-width: 170px;
 }
