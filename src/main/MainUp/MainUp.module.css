@@ -1,9 +1,7 @@
-
 .mainUp {
     display: flex;
     flex-wrap: wrap;
-    background-color: #7766a1;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono, monospace;
 }
 
 .title {
@@ -57,3 +55,28 @@
     padding-left: 70px;
     margin-bottom: 0.8rem;
 }
+
+/*@media (max-width: 320px) {*/
+/*    .avatar {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .title {*/
+/*        font-size: 34px;*/
+/*    }*/
+
+/*    .contact_list {*/
+/*        font-size: 12px;*/
+/*        line-height: 14px;*/
+/*    }*/
+
+/*    .contact_list dd {*/
+/*        padding-left: 40px;*/
+/*        margin-bottom: 0.8rem;*/
+/*    }*/
+
+/*    .position {*/
+/*        max-width: 220px;*/
+/*        margin-bottom: 20px;*/
+/*    }*/
+/*}*/

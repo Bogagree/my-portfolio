@@ -1,57 +1,97 @@
 .projectCard {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
+    margin-bottom: 40px;
     border: 1px solid #f1f1f1;
-    margin-left: 0;
+    background-color: #fff;
     transition: box-shadow .3s;
-    margin-right: 0;
-}
-
-.projectCard:hover {
-    cursor: pointer;
+    font-family: Roboto Mono, monospace;
 }
 
 .projectImg {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 393px;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.viewBtn {
+    display: block;
+    border: 2px solid #6d56c1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #7766a1;
+    color: white;
 }
 
 .textContainer {
+    width: 52%;
     padding: 50px 25px 40px 25px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
 }
 
-.title {
-    font-size: 18px;
-    line-height: 30px;
-    font-family: Roboto Mono, monospace;
+.date {
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.textContainer h3 {
+    font-size: 14px;
+    line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 700;
+    color: #555;
+}
+
+.textContainer a {
+    color: #6d56c1;
+    transition: all .3s;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.textContainer a:hover {
+    color: #6d56c1;
 }
 
 .description {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 45px;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
 }
 
-.projectCard p {
-    font-family: Roboto Mono, monospace;
+.stack {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
     font-weight: 700;
+    margin-bottom: 15px;
+    color: #555;
 }
 
 .tags {
     padding: 0;
-    margin-left: 10px;
-    gap: 10px;
+    gap: 5px;
     list-style: none;
-    width: 250px;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .tags li {
@@ -76,7 +116,6 @@
     text-decoration: none;
     cursor: pointer;
     margin-top: 55px;
-    font-family: Roboto Mono, monospace;
     font-size: 14px;
     line-height: 20px;
 }
