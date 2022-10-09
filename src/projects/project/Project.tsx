@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Project.module.css'
 
 export type ProjectType = {
+    date: string
     title: string
     description: string
     img?: string
@@ -14,17 +15,22 @@ const Project = (props: ProjectType) => {
     return (
         <div className={style.projectCard}>
 
-            <img className={style.projectImg} src={props.img} alt="project-img"></img>
+            <div className={style.projectImg} style={{backgroundImage: `url(${props.img})`}}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a className={style.viewBtn}> look </a>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a className={style.viewBtn}> code </a>
+            </div>
 
             <div className={style.textContainer}>
 
-                <h3 className={style.title}>
-                    <a href={props.link}>{props.title}</a>
-                </h3>
+                <p className={style.date}>{props.date}</p>
+
+                <h3>{props.title}</h3>
 
                 <span className={style.description}>{props.description}</span>
 
-                <p>Used stack:</p>
+                <p className={style.stack}>Used stack:</p>
 
                 <ul className={style.tags}>
                     {props.technologies.map(t => <li>{t}</li>)}
