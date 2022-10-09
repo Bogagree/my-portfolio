@@ -1,19 +1,12 @@
 .projectsBlock {
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     background-color: lightskyblue;
 }
 
 .projectsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-.title {
-    background-color: yellow;
-    font-family: Roboto Mono,monospace;
-    font-size: 36px;
 }
 
 .projects {

@@ -9,7 +9,6 @@ const Header = () => {
             <div className={styleContainer.container}>
                 <Nav/>
             </div>
-
         </div>
     );
 };

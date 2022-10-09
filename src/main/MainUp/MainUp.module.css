@@ -1,0 +1,59 @@
+
+.mainUp {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #7766a1;
+    font-family: Roboto Mono,monospace;
+}
+
+.title {
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.avatar_container {
+    display: flex;
+    padding: 0 15px;
+}
+
+.avatar {
+    border-radius: 5px;
+    box-shadow: 0 0 27px rgb(96 96 96 / 34%);
+    height: 380px;
+    object-fit: cover;
+    margin-top: 10px;
+    position: relative;
+    top: 40px;
+}
+
+.bio {
+    color: #fff;
+    padding-left: 30px;
+}
+
+.position {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.contact_list {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact_list dt {
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: .4;
+}
+
+.contact_list dd {
+    padding-left: 70px;
+    margin-bottom: 0.8rem;
+}

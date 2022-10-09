@@ -1,8 +1,6 @@
-.title {
-    background-color: mediumpurple;
-    font-family: Roboto Mono,monospace;
-    text-align: center;
-    font-size: 36px;
+.getInTouch {
+    background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));;
+
 }
 
 .formWrapper {
@@ -22,7 +20,7 @@
     color: mediumpurple;
     font-size: 16px;
     line-height: 24px;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono, monospace;
 }
 
 .sendBtn {

@@ -1,12 +1,10 @@
 .skillsBlock {
-    /*min-height: 100vh;*/
     background-color: #a9c96a;
 }
 
 .skillsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
 }
 
@@ -14,12 +12,6 @@
     width: 300px;
     height: 100px;
     vertical-align: middle;
-}
-
-.title {
-    background-color: yellow;
-    font-family: Roboto Mono,monospace;
-    font-size: 36px;
 }
 
 .skills {
