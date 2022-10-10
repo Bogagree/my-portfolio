@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Project.module.css'
+import style from './Project.module.scss'
 
 export type ProjectType = {
     date: string
@@ -7,19 +7,21 @@ export type ProjectType = {
     description: string
     img?: string
     link: string
+    codeLink:string
     linkTitle: string
     technologies: string[]
 }
 
-const Project = (props: ProjectType) => {
+const Project:React.FC<ProjectType> = (props) => {
+
     return (
         <div className={style.projectCard}>
 
             <div className={style.projectImg} style={{backgroundImage: `url(${props.img})`}}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className={style.viewBtn}> look </a>
+                <a className={style.viewBtn} href={props.link}> look </a>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a className={style.viewBtn}> code </a>
+                <a className={style.viewBtn} href={props.codeLink}> code </a>
             </div>
 
             <div className={style.textContainer}>

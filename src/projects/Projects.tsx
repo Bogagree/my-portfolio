@@ -12,6 +12,7 @@ const myProjects = [
         date: new Date().toLocaleString('default', { dateStyle: 'long'}),
         title: 'Learning cards',
         description: 'Lorem ipsum dolor sit amet.',
+        codeLink: 'https://github.com/Bogagree/cards_project',
         link: 'https://bogagree.github.io/cards_project/#/login',
         linkTitle: 'learning-Cards.com',
         img: learningCards,
@@ -21,6 +22,7 @@ const myProjects = [
         date: new Date().toLocaleString('default', { dateStyle: 'long'}),
         title: 'Social Network',
         description: 'Lorem ipsum dolor sit amet.',
+        codeLink: 'https://github.com/Bogagree/samurai-way-main',
         link: 'https://bogagree.github.io/samurai-way-main/#/profile',
         linkTitle: 'Samurai-Way.com',
         img: socialNetwork,
@@ -31,6 +33,7 @@ const myProjects = [
         title: 'Allthaiherbs.com',
         description: 'internet shop with Thai traditional medicine and natural cosmetic',
         link: 'https://allthaiherbs.com/ru',
+        codeLink: 'https://allthaiherbs.com/ru',
         linkTitle: 'Allthaiherbs.com',
         img: allThaiHerbs,
         technologies: ['html5', 'css3', 'JavaScript', 'React', 'Redux']
@@ -53,6 +56,7 @@ const Projects: React.FC = () => {
                         date={p.date}
                         title={p.title}
                         description={p.description}
+                        codeLink={p.codeLink}
                         link={p.link}
                         linkTitle={p.linkTitle}
                         img={p.img}
