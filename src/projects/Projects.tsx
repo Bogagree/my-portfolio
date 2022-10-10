@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
 
             <div className={styleContainer.container}>
 
-                <Title text={'Projects'} color={'#555'}/>
+                <Title text={'Projects'}/>
 
                 <div className={style.projects}>
 

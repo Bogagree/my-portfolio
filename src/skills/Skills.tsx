@@ -9,7 +9,7 @@ export const Skills = () => {
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
 
-                <Title text={'Skills'} color={'#555'}/>
+                <Title text={'Skills'}/>
 
                 <div className={style.skills}>
                     <Skill title={'HTML'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, possimus!'}/>

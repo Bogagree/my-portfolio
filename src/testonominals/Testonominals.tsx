@@ -9,7 +9,7 @@ const Testonominals = () => {
         <div className={style.testimonials}>
             <div className={styleContainer.container}>
 
-                <Title text={'Testimonials'} color={'#555'}/>
+                <Title text={'Testimonials'}/>
 
                 <div className={style.testimonialsBlock}>
                     <SiteButton className={style.sliderBtn}>left</SiteButton>
