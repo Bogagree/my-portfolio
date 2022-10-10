@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './MainUp.module.css';
+import style from './MainUp.module.scss';
 import avatar from '../../assets/img/avatar.jpg';
 import {SocialLinks} from '../SocialLinks/SocialLinks';
 import stylesContainer from '../../common/styles/Container.module.css'
@@ -8,6 +8,7 @@ export const MainUp = () => {
     return (
                 <div className={stylesContainer.container}>
                     <div className={style.mainUp}>
+
                         <div className={style.avatar_container}>
                             <img className={style.avatar} src={avatar} alt="avatar"></img>
                         </div>

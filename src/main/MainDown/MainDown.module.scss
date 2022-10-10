@@ -1,0 +1,22 @@
+@import '../../common/styles/SASS/mixins.scss';
+@import '../../common/styles/SASS/variables.sass';
+
+.mainDown {
+    background: $bgColor;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.mainDown p {
+    font-family: Roboto,sans-serif;
+    @include fontParams(18px, 30px, 400, 30px);
+    color: $primaryTextColor;
+    padding: 0 25px;
+}
+
+.downloadBtn {
+    margin-left: 25px;
+    width: 170px;
+}
