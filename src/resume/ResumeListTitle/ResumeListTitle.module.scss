@@ -1,0 +1,11 @@
+@import '../../common/styles/SASS/variables';
+@import '../../common/styles/SASS/mixins';
+
+
+.resumeListTitle {
+  font-family: Roboto Mono,monospace;
+  text-transform: uppercase;
+  @include fontParams(14px,20px,700,40px);
+  letter-spacing: 5px;
+  color: $secondaryTextColor;
+}

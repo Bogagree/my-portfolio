@@ -1,1 +1,12 @@
+@import '../common/styles/SASS/mixins';
+@import '../common/styles/SASS/variables.sass';
+
+
+.description {
+  font-family: Roboto,sans-serif;
+  @include fontParams(18px, 30px, 400, 30px);
+  color: $primaryTextColor;
+  padding-left: 25px;
+}
+
 

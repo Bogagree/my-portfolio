@@ -1,0 +1,51 @@
+@import '../../common/styles/SASS/variables';
+@import '../../common/styles/SASS/mixins';
+
+.resumeListBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 25px;
+  padding-bottom: 50px;
+  border-left: 2px solid $primaryColor;
+
+  &:before {
+    position: absolute;
+    left: -7.5px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $primaryColor;
+    content: "";
+    border-radius: 50%;
+    background-color: $bgColor;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: $primaryColor;
+    @include fontParams(18px, 20px, 700, 5px);
+    font-family: Roboto Mono, monospace;
+  }
+
+  .period {
+    @include fontParams(14px, 20px, 400, 10px);
+    color: $secondaryTextColor;
+  }
+
+  .position {
+    @include fontParams(14px, 20px, 700, 0);
+    font-style: italic;
+    color: $accentColor;
+  }
+
+  .description {
+    @include fontParams(18px, 30px, 400, 0);
+    color: $primaryTextColor;
+  }
+
+}

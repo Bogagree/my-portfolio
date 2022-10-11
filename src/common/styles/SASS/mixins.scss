@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: $flexDirection;
 }
+
 @mixin fontParams ($size, $lineHeight, $weight, $marginBottom: 15px) {
   font-size: $size;
   line-height: $lineHeight;
