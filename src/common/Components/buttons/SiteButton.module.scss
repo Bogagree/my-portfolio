@@ -1,0 +1,20 @@
+@import '../../styles/SASS/variables';
+
+.default {
+    border: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 15px;
+    color: $turnOverTextColor;
+    background-color: $primaryColor;
+    overflow: hidden;
+}
+
+.default:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.error {
+    background-color: red;
+}

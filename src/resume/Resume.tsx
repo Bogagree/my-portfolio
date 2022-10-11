@@ -1,6 +1,5 @@
 import React from 'react';
 import styleContainer from '../common/styles/Container.module.css';
-import styleWrapper from '../common/styles/Wrapper.module.css';
 import style from './Resume.module.scss'
 import {Title} from '../common/Components/Title/Title';
 import {ResumeList} from './ResumeList/ResumeList';
@@ -35,29 +34,27 @@ const employment = [
 
 export const Resume = () => {
     return (
-        <div className={styleWrapper.wrapper}>
-
             <div className={styleContainer.container}>
 
-                <Title text={'Resume'}/>
+                <div className={style.wrapper}>
+                    <Title text={'Resume'}/>
 
-                <div className={style.resume}>
-                    <p className={style.description}>I'm a frontend developer with experience in creating SPA using
-                        React, Redux, TypeScript, SASS. I have knowledge of best practices in UI, TDD and debug
-                        processes. Looking forward to expand my knowledge with new technologies, such as React Native.
-                        On my free time I like to read IT literature, complete tasks on <a
-                            href='https://www.codewars.com/'>codewars.com</a>, surfing IT memes that are helping me
-                        improve my English.
-                    </p>
-
+                    <div className={style.resume}>
+                        <p className={style.description}>I'm a frontend developer with experience in creating SPA using
+                            React, Redux, TypeScript, SASS. I have knowledge of best practices in UI, TDD and debug
+                            processes. Looking forward to expand my knowledge with new technologies, such as React
+                            Native.
+                            On my free time I like to read IT literature, complete tasks on <a
+                                href='https://www.codewars.com/'>codewars.com</a>, surfing IT memes that are helping me
+                            improve my English.
+                        </p>
+                    </div>
                 </div>
 
                 <ResumeList listTitle={'Education'} items={education}/>
                 <ResumeList listTitle={'Employment'} items={employment}/>
 
             </div>
-
-        </div>
     )
         ;
 };
