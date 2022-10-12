@@ -5,6 +5,8 @@
   display: flex;
   flex-wrap: wrap;
   font-family: Roboto Mono, monospace;
+  padding-top: 40px;
+  background:  transparentize(#7766a1, 0.2);
 
   .avatar_container {
     display: flex;
@@ -57,6 +59,7 @@
         &:hover {
           color: $accentColor;
           text-decoration: underline;
+          transition: ease-in-out 0.3s;
         }
       }
     }

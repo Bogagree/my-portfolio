@@ -7,7 +7,6 @@
 
 
 .header {
-  //background-color: $primaryColor;
   padding: 0 25px 10px 25px;
   transition: all .5s;
   position: fixed;
@@ -20,7 +19,6 @@
 }
 
 .hidden {
-  /* display: none; */
   top: -80px;
   transition: top 0.4s ease-out;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import style from './MainDown.module.scss';
 import {Title} from '../../common/Components/Title/Title';
 import SiteButton from '../../common/Components/Buttons/Site.Button';
+import {AiOutlineDownload} from 'react-icons/ai';
 
 export const MainDown = () => {
     return (
@@ -26,7 +27,7 @@ export const MainDown = () => {
                 </p>
 
                 <div>
-                    <SiteButton className={style.downloadBtn}>Download CV</SiteButton>
+                    <SiteButton className={style.downloadBtn}> <AiOutlineDownload/> Download CV</SiteButton>
                 </div>
 
         </div>

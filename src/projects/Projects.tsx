@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
 
     return (
 
-        <section>
+        <section id={'projects'}>
             <div className={style.container}>
 
                 <div className={style.projectsBlock}>
@@ -54,6 +54,7 @@ const Projects: React.FC = () => {
                     <div className={style.projects}>
 
                         {myProjects.map(p => <Project
+                            key={p.title}
                             date={p.date}
                             title={p.title}
                             description={p.description}

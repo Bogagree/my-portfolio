@@ -18,9 +18,7 @@ const Project:React.FC<ProjectType> = (props) => {
         <div className={style.projectCard}>
 
             <div className={style.projectImg} style={{backgroundImage: `url(${props.img})`}}>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={style.viewBtn} href={props.link}> look </a>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={style.viewBtn} href={props.codeLink}> code </a>
             </div>
 
@@ -35,7 +33,7 @@ const Project:React.FC<ProjectType> = (props) => {
                 <p className={style.stack}>Used stack:</p>
 
                 <ul className={style.tags}>
-                    {props.technologies.map(t => <li>{t}</li>)}
+                    {props.technologies.map(t => <li key={t}>{t}</li>)}
                 </ul>
 
                 <div className={style.linkWrapper}>

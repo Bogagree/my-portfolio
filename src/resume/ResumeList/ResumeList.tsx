@@ -16,6 +16,7 @@ export const ResumeList: React.FC<ResumeListPropsType> = ({listTitle,items}) => 
             {
                 items.map(e =>
                     <ResumeListBlock
+                        key={e.title}
                         title={e.title}
                         period={e.period}
                         description={e.description}

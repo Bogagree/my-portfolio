@@ -21,9 +21,13 @@
   min-width: 170px;
   @include fontParams(14px, 20px, 600, 0);
   @include flexCenter();
-  &:before {
-    content: url("../../assets/img/download_btn_icon.png");
-    margin-right: 5px;
+  &:hover {
+    color: $accentColor;
+    text-decoration: underline;
+    transition: ease-in-out 0.3s;
   }
 }
+
+
+
 

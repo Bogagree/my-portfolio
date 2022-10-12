@@ -5,7 +5,8 @@ import {Title} from '../common/Components/Title/Title';
 
 const Testonominals = () => {
     return (
-        <div className={style.testimonials}>
+        <section id={'testonominals'}>
+            <div className={style.testimonials}>
 
                 <Title text={'Testimonials'}/>
 
@@ -15,6 +16,7 @@ const Testonominals = () => {
                     <SiteButton className={style.sliderBtn}>right</SiteButton>
                 </div>
             </div>
+        </section>
 
     );
 };

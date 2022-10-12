@@ -2,12 +2,12 @@
 
 svg {
   height: auto;
-  width: 40px;
+  width: 48px;
   fill: $turnOverTextColor;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.7s;
   padding: 5px;
   &:hover {
-    opacity: 0.5;
+    opacity: 0.8;
     fill: $accentColor;
   }
 }

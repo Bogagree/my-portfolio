@@ -1,16 +1,17 @@
 import React from 'react';
-import style from './Nav.module.css'
+import style from './Nav.module.scss'
+
+const header: string[] = [
+    'main', 'resume','skills', 'projects', 'testimonials', 'contacts'
+]
 
 export const Nav = () => {
     return (
         <nav className={style.nav}>
 
-                <a href="src/header/nav/Nav#">main</a>
-                <a href="src/header/nav/Nav#">skills</a>
-                <a href="src/header/nav/Nav#">projects</a>
-                <a href="src/header/nav/Nav#">testimonials</a>
-                <a href="src/header/nav/Nav#">blog</a>
-                <a href="src/header/nav/Nav#">contacts</a>
+            {header.map(h => {
+                return <a key={h} href={'#' + h}>{h}</a>
+            })}
 
         </nav>
     );

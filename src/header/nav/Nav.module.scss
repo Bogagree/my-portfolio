@@ -1,0 +1,21 @@
+@import "../../common/styles/SASS/variables";
+@import "../../common/styles/SASS/mixins";
+
+.nav {
+    max-width: 60%;
+    @include flexCenter(space-between);
+    flex-wrap: wrap;
+    padding: 40px 0 0 25px;
+    a {
+        @include fontParams(14px,20px,700);
+        text-decoration: none;
+        color: $bgColor;
+        font-family: Roboto Mono,monospace;
+        text-transform: uppercase;
+        &:hover {
+            color: $accentColor;
+            text-decoration: underline;
+            transition: ease-in-out 0.4s;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './SocialLinks.module.scss';
-import {ReactComponent as VK} from '../../../src/assets/icons/icons8-vk-round.svg';
+import {ReactComponent as VK} from '../../../src/assets/icons/VK_Monochrome_Compact_Logo.svg';
 import {AiFillGithub} from 'react-icons/ai'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {AiFillFacebook} from 'react-icons/ai'
@@ -23,7 +23,7 @@ export const SocialLinks = () => {
 
     return (
         <div className={style.social}>
-            {socials.map(s => <a href={s.link} children={<s.icon/>}></a>)}
+            {socials.map(s => <a key={s.link} href={s.link} children={<s.icon/>}></a>)}
         </div>
     );
 };

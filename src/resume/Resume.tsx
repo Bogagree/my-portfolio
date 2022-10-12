@@ -34,7 +34,7 @@ const employment = [
 export const Resume = () => {
     return (
 
-        <section>
+        <section id={'resume'}>
             <div className={style.container}>
 
                 <div className={style.wrapper}>

@@ -12,14 +12,14 @@ const skills = [
 ]
 
 const mappedSkills = skills.map(({icon, title}) => {
-    return <Skill Icon={icon} title={title}/>
+    return <Skill key={title} Icon={icon} title={title}/>
 })
 
 export const Skills = () => {
 
     return (
 
-        <section>
+        <section id={'skills'}>
             <div className={style.container}>
                 <div className={style.skillsBlock}>
                     <Title text={'Skills'}/>
