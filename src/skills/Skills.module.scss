@@ -1,0 +1,30 @@
+@import '../common/styles/SASS/mixins';
+@import '../common/styles/SASS/variables.sass';
+
+.container {
+  @include container()
+}
+
+.skillsBlock {
+  padding: 0 25px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.projectImg {
+  width: 300px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.skills {
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

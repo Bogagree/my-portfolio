@@ -1,13 +1,11 @@
 import React from 'react';
 import style from './Testimonials.module.css'
-import SiteButton from "../common/Components/buttons/Site.Button";
-import styleContainer from "../common/styles/Container.module.css";
+import SiteButton from "../common/Components/Buttons/Site.Button";
 import {Title} from '../common/Components/Title/Title';
 
 const Testonominals = () => {
     return (
         <div className={style.testimonials}>
-            <div className={styleContainer.container}>
 
                 <Title text={'Testimonials'}/>
 
@@ -18,7 +16,6 @@ const Testonominals = () => {
                 </div>
             </div>
 
-        </div>
     );
 };
 

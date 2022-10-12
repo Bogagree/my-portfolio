@@ -1,5 +1,4 @@
 import React from 'react';
-import styleContainer from '../common/styles/Container.module.css';
 import style from './Resume.module.scss'
 import {Title} from '../common/Components/Title/Title';
 import {ResumeList} from './ResumeList/ResumeList';
@@ -34,7 +33,9 @@ const employment = [
 
 export const Resume = () => {
     return (
-            <div className={styleContainer.container}>
+
+        <section>
+            <div className={style.container}>
 
                 <div className={style.wrapper}>
                     <Title text={'Resume'}/>
@@ -55,6 +56,7 @@ export const Resume = () => {
                 <ResumeList listTitle={'Employment'} items={employment}/>
 
             </div>
+        </section>
     )
         ;
 };

@@ -2,11 +2,9 @@ import React from 'react';
 import style from './MainUp.module.scss';
 import avatar from '../../assets/img/avatar.jpg';
 import {SocialLinks} from '../SocialLinks/SocialLinks';
-import stylesContainer from '../../common/styles/Container.module.css'
 
 export const MainUp = () => {
     return (
-        <div className={stylesContainer.container}>
 
             <div className={style.mainUp}>
 
@@ -29,15 +27,14 @@ export const MainUp = () => {
                             <dt>Whatsapp:</dt>
                             <dd><a href="https://wa.me/66845628577">+66 (84) 562-85-77</a></dd>
                             <dt>Email:</dt>
-                            <dd><a href="mailto:bogatireshka@gmail.com">bogatireshka@gmail.com</a></dd>
+                            <dd><a href="mailto:bogatireshka@gmail.com">bogagree@gmail.com</a></dd>
                             <dt>Address:</dt>
-                            <dd>Taganrog, Russia</dd>
+                            <dd>Taganrog (Rostov), Russia / Thailand, Pattaya</dd>
                         </dl>
                     </div>
 
                     <SocialLinks/>
                 </div>
             </div>
-        </div>
     )
 }

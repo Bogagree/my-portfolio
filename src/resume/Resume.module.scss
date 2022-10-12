@@ -1,10 +1,15 @@
 @import '../common/styles/SASS/mixins';
 @import '../common/styles/SASS/variables.sass';
 
+.container {
+  @include container()
+}
+
 .wrapper {
   padding: 0 25px;
+
   .description {
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     @include fontParams(18px, 30px, 400, 30px);
     color: $primaryTextColor;
   }

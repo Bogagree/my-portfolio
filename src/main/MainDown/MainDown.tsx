@@ -1,12 +1,10 @@
 import React from 'react';
 import style from './MainDown.module.scss';
 import {Title} from '../../common/Components/Title/Title';
-import SiteButton from '../../common/Components/buttons/Site.Button';
-import stylesContainer from '../../common/styles/Container.module.css';
+import SiteButton from '../../common/Components/Buttons/Site.Button';
 
 export const MainDown = () => {
     return (
-        <div className={stylesContainer.container}>
 
             <div className={style.mainDown}>
 
@@ -31,7 +29,6 @@ export const MainDown = () => {
                     <SiteButton className={style.downloadBtn}>Download CV</SiteButton>
                 </div>
 
-            </div>
         </div>
     );
 };

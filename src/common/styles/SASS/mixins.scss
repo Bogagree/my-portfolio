@@ -5,9 +5,21 @@
   flex-direction: $flexDirection;
 }
 
-@mixin fontParams ($size, $lineHeight, $weight, $marginBottom: 15px) {
+@mixin fontParams($size, $lineHeight, $weight, $marginBottom: 15px) {
   font-size: $size;
   line-height: $lineHeight;
   font-weight: $weight;
   margin-bottom: $marginBottom;
+}
+
+@mixin container {
+  margin: 0 auto;
+  max-width: 1140px;
+
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+  @media (max-width: 320px) {
+    max-width: 319px;
+  }
 }

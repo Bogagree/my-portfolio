@@ -1,15 +1,16 @@
 import React from 'react';
-import {MainDown} from './MainDown/MainDown';
 import {MainUp} from './MainUp/MainUp';
-import style from './Main.module.css';
+import style from './Main.module.scss';
+import {MainDown} from './MainDown/MainDown';
 
 export const Main = () => {
     return (
-        <div className={style.main}>
-            <div className={style.backGroundWrapper}>
+        <section className={style.main}>
+            <div className={style.container}>
                 <MainUp/>
-            </div>
                 <MainDown/>
-        </div>
-    );
+            </div>
+        </section>
+    )
+        ;
 };

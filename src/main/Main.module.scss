@@ -1,0 +1,11 @@
+@import '../../src/common/styles/SASS/mixins';
+@import '../../src/common/styles/SASS/variables';
+
+.main {
+    background-color: $primaryColor;
+}
+
+.container {
+    @include  container()
+}
+

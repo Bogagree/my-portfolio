@@ -1,6 +1,5 @@
 import React from 'react';
-import style from './Projects.module.css';
-import styleContainer from '../common/styles/Container.module.css';
+import style from './Projects.module.scss';
 import Project from './project/Project';
 import {Title} from '../common/Components/Title/Title';
 import allThaiHerbs from '../assets/img/projectImg.jpg'
@@ -9,7 +8,7 @@ import learningCards from '../assets/img/learningCards.jpg'
 
 const myProjects = [
     {
-        date: new Date().toLocaleString('default', { dateStyle: 'long'}),
+        date: new Date().toLocaleString('default', {dateStyle: 'long'}),
         title: 'Learning cards',
         description: 'Lorem ipsum dolor sit amet.',
         codeLink: 'https://github.com/Bogagree/cards_project',
@@ -19,7 +18,7 @@ const myProjects = [
         technologies: ['html5', 'css3', 'JavaScript', 'React', 'Redux']
     },
     {
-        date: new Date().toLocaleString('default', { dateStyle: 'long'}),
+        date: new Date().toLocaleString('default', {dateStyle: 'long'}),
         title: 'Social Network',
         description: 'Lorem ipsum dolor sit amet.',
         codeLink: 'https://github.com/Bogagree/samurai-way-main',
@@ -29,7 +28,7 @@ const myProjects = [
         technologies: ['html5', 'css3', 'JavaScript', 'React', 'Redux']
     },
     {
-        date: new Date().toLocaleString('default', { dateStyle: 'long'}),
+        date: new Date().toLocaleString('default', {dateStyle: 'long'}),
         title: 'Allthaiherbs.com',
         description: 'internet shop with Thai traditional medicine and natural cosmetic',
         link: 'https://allthaiherbs.com/ru',
@@ -44,28 +43,31 @@ const myProjects = [
 const Projects: React.FC = () => {
 
     return (
-        <div className={style.projectsBlock}>
 
-            <div className={styleContainer.container}>
+        <section>
+            <div className={style.container}>
 
-                <Title text={'Projects'}/>
+                <div className={style.projectsBlock}>
 
-                <div className={style.projects}>
+                    <Title text={'Projects'}/>
 
-                    {myProjects.map(p => <Project
-                        date={p.date}
-                        title={p.title}
-                        description={p.description}
-                        codeLink={p.codeLink}
-                        link={p.link}
-                        linkTitle={p.linkTitle}
-                        img={p.img}
-                        technologies={p.technologies}
-                    />)}
+                    <div className={style.projects}>
 
+                        {myProjects.map(p => <Project
+                            date={p.date}
+                            title={p.title}
+                            description={p.description}
+                            codeLink={p.codeLink}
+                            link={p.link}
+                            linkTitle={p.linkTitle}
+                            img={p.img}
+                            technologies={p.technologies}
+                        />)}
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

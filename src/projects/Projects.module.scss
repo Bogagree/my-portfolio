@@ -1,0 +1,16 @@
+@import '../common/styles/SASS/mixins';
+@import '../common/styles/SASS/variables.sass';
+
+.container {
+    @include container()
+}
+.projectsBlock {
+    min-height: 100vh;
+    padding: 0 25px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

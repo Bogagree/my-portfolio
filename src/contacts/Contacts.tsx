@@ -1,19 +1,18 @@
 import React from 'react';
-import style from './Contacts.module.css'
-import stylesContainer from "../common/styles/Container.module.css";
-import SiteButton from "../common/Components/buttons/Site.Button";
+import style from './Contacts.module.scss'
+import SiteButton from "../common/Components/Buttons/Site.Button";
 import {Title} from '../common/Components/Title/Title';
+import {Footer} from '../footer/Footer';
 
 const Contacts = () => {
     return (
-        <div className={style.getInTouch}>
+        <section className={style.getInTouch}>
 
-        <div className={stylesContainer.container}>
+            <div className={style.container}>
 
                 <Title text={'Get in touch'} color={'white'}/>
 
                 <form>
-
                     <div className={style.formWrapper}>
                         <input className={style.input} type="text" placeholder="Your name"></input>
                         <input className={style.input} type="text" placeholder="Your email"></input>
@@ -22,9 +21,9 @@ const Contacts = () => {
                     </div>
 
                 </form>
-
+                <Footer/>
             </div>
-        </div>
+        </section>
     );
 };
 

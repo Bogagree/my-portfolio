@@ -1,6 +1,13 @@
-.getInTouch {
-    background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));;
+@import '../common/styles/SASS/mixins';
+@import '../common/styles/SASS/variables.sass';
 
+.container {
+    @include container()
+}
+
+.getInTouch {
+    padding-top: 60px;
+    background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));;
 }
 
 .formWrapper {

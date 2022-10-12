@@ -1,0 +1,12 @@
+@import '../../src/common/styles/SASS/mixins';
+@import '../../src/common/styles/SASS/variables';
+
+.container {
+  @include container();
+}
+
+
+.header {
+  background-color: $primaryColor;
+  padding: 50px 25px 10px 25px;
+}
