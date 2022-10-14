@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Resume.module.scss'
 import {Title} from '../common/Components/Title/Title';
 import {ResumeList} from './ResumeList/ResumeList';
+import {Slide} from 'react-awesome-reveal';
 
 const education = [
     {
@@ -35,6 +36,7 @@ export const Resume = () => {
     return (
 
         <section id={'resume'}>
+
             <div className={style.container}>
 
                 <div className={style.wrapper}>
@@ -51,11 +53,12 @@ export const Resume = () => {
                         </p>
                     </div>
                 </div>
-
+                <Slide direction={'up'}>
                 <ResumeList listTitle={'Education'} items={education}/>
                 <ResumeList listTitle={'Employment'} items={employment}/>
-
+                </Slide>
             </div>
+
         </section>
     )
         ;

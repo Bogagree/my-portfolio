@@ -4,23 +4,17 @@ import {Nav} from "./nav/Nav";
 
 export const Header = () => {
 
-    const [position, setPosition] = useState(window.scrollY)
-    const [visible, setVisible] = useState(true)
+    const [header, setHeader] = useState(true)
 
-    useEffect(()=> {
-        const handleScroll = () => {
-            let moving = window.scrollY
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () =>
+                setHeader(window.scrollY < 100)
+            );
+        }
+    }, []);
 
-            setVisible(position > moving);
-            setPosition(moving)
-        };
-        window.addEventListener("scroll", handleScroll);
-        return(() => {
-            window.removeEventListener("scroll", handleScroll);
-        })
-    })
-
-    const cls = visible ? `${style.visible}` :  `${style.hidden}`;
+    const cls = header ? `${style.visible}` : `${style.hidden}`;
 
     return (
         <header className={`${style.header}  ${cls}`}>

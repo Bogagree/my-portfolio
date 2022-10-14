@@ -6,11 +6,19 @@
   flex-wrap: wrap;
   font-family: Roboto Mono, monospace;
   padding-top: 40px;
-  background:  transparentize(#7766a1, 0.2);
+  background:  transparentize($primaryColor, 0.2);
 
   .avatar_container {
     display: flex;
     padding: 0 15px;
+    &::after{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: -10px;
+      top: -10px;
+      border: 3px solid $accentColor;
+    }
 
     .avatar {
       border-radius: 5px;
@@ -20,6 +28,10 @@
       margin-top: 10px;
       position: relative;
       top: 40px;
+
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
     }
   }
 }

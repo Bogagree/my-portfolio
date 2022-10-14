@@ -5,12 +5,9 @@
   font-weight: 500;
   width: 12ch;
   font-family: Roboto Mono, monospace;
-  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  //animation: typing 3s steps(22), blink .5s step-end infinite alternate;
   overflow: hidden;
   white-space: nowrap;
-  &::after {
-    content: '_';
-  }
 }
 
 @keyframes typing {

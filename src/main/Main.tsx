@@ -40,8 +40,6 @@ export const Main = () => {
                 <MainUp/>
                 <MainDown/>
             </div>
-
         </section>
-    )
-        ;
+    );
 };
