@@ -1,0 +1,33 @@
+@import "../../common/styles/SASS/variables";
+@import "../../common/styles/SASS/mixins";
+
+.burgerNav {
+  max-width: 300px;
+  @include flexCenter(space-between, column);
+  flex-wrap: wrap;
+  padding: 40px 0 0 25px;
+
+  .link {
+    @include fontParams(14px, 20px, 700);
+    text-decoration: none;
+    color: $bgColor;
+    font-family: Roboto Mono, monospace;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+      color: $accentColor;
+      transition: ease-in-out 0.4s;
+    }
+
+    .active {
+      color: $accentColor;
+      background: #7766a1;
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    display: none;
+  }
+
+}

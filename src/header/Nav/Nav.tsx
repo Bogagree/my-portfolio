@@ -16,6 +16,7 @@ export const Nav = () => {
                     key={h}
                     to={h}
                     className={style.link}
+                    activeClass={style.active}
                 >{h}</Link>
             })}
 

@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import style from './Header.module.scss'
-import {Nav} from "./nav/Nav";
+import {Nav} from './Nav/Nav'
+import {BurgerNav} from './BurgerNav/BurgerNav';
+
 
 export const Header = () => {
 
@@ -20,6 +22,7 @@ export const Header = () => {
         <header className={`${style.header}  ${cls}`}>
             <div className={style.container}>
                 <Nav/>
+                <BurgerNav/>
             </div>
         </header>
     );
