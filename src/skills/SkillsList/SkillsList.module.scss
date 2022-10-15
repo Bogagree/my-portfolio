@@ -9,10 +9,13 @@
     text-transform: uppercase;
     text-align: center;
     color: $accentColor;
-    @include fontParams(40px, 32px, 700, 15px);
+    @include fontParams(36px, 32px, 700, 15px);
     font-family: Roboto Mono, monospace;
     @media screen and (max-width: 768px) {
       @include fontParams(30px, 24px, 700, 15px);
+      }
+    @media screen and (max-width: 425px) {
+      @include fontParams(24px, 20px, 700, 15px);
       }
   }
 
