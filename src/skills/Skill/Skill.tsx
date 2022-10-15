@@ -9,10 +9,9 @@ type SkillPropsType = {
 export const Skill: React.FC<SkillPropsType> = ({Icon, title}) => {
     return (
         <div className={style.skill}>
+
             {Icon}
             <p className={style.title}>{title}</p>
         </div>
     );
 };
-
-export default Skill;

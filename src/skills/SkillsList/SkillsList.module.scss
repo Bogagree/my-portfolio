@@ -1,0 +1,30 @@
+@import "../../common/styles/SASS/variables";
+@import "../../common/styles/SASS/mixins";
+@import "../../common/styles/SASS/devices";
+
+.skillsList {
+  margin-bottom: 40px;
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $accentColor;
+    @include fontParams(40px, 32px, 700, 15px);
+    font-family: Roboto Mono, monospace;
+  }
+
+  p {
+    font-family: Roboto, sans-serif;
+    @include fontParams(18px, 30px, 400, 30px);
+    color: $primaryTextColor;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    @media screen and (orientation: landscape) {
+      width: $tablet;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
+}
