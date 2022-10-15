@@ -18,7 +18,7 @@ type SkillsType = {
 export const SkillsList: React.FC<SkillsListPropsType> = ({skills}) => {
     return (
         <div className={style.skillsList}>
-            <h3>{skills.title}</h3>
+            <h3 className={style.skillsList_title}>{skills.title}</h3>
             <p>{skills.description}</p>
             <div className={style.skills}>
                 {skills.icons.map(({icon, title}) => {

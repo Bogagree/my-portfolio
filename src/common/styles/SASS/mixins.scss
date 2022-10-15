@@ -20,6 +20,14 @@
     max-width: 720px;
   }
   @media (max-width: 320px) {
-    max-width: 319px;
+    max-width: 320px;
+  }
+}
+
+@mixin sectionWrapper($upAndDown: 0, $sides: 25px  ) {
+  padding: $upAndDown $sides;
+
+  @media (max-width: 425px) {
+    padding: 0 15px;
   }
 }

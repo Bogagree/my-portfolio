@@ -1,16 +1,21 @@
 @import "../../common/styles/SASS/variables";
 @import "../../common/styles/SASS/mixins";
 
-.skill {
+.skillItem {
   @include flexCenter(start);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: center;
   background-color: $primaryColor;
   cursor: pointer;
   transition: ease-in-out 0.2s;
   border-radius: 50px;
-  padding: 25px 30px;
-  width: 300px;
+  padding: 15px 20px;
+  min-width: 200px;
+  width: 100%;
 
   svg {
+    padding: 0;
     width: 60px;
     height: 60px;
   }
@@ -18,7 +23,6 @@
   .title {
     @include fontParams(24px, 36px, 500,0);
     color: $turnOverTextColor;
-    margin: 0 auto;
   }
 
   &:hover {
@@ -31,7 +35,31 @@
     fill: $accentColor;
   }
 
+  @media screen and (max-width: 768px){
+    padding: 15px 20px;
+    min-width: 180px;
+    svg {
+      padding: 5px;
+      width: 50px;
+      height: 50px;
+    }
+    .title {
+      @include fontParams(20px, 30px, 500,0);
+    }
+  }
 
+  @media screen and (max-width: 425px){
+    padding: 10px 10px;
+    min-width: 130px;
+    svg {
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+    }
+    .title {
+      @include fontParams(14px, 24px, 500,0);
+    }
+  }
 }
 
 

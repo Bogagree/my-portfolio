@@ -4,3 +4,7 @@
   @include container();
 }
 
+.skillsBlock {
+  @include sectionWrapper();
+}
+

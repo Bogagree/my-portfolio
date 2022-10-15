@@ -6,9 +6,9 @@ import {Footer} from '../footer/Footer';
 
 const Contacts = () => {
     return (
-        <section id={'contacts'} className={style.getInTouch}>
+        <section id={'contacts'} className={style.container}>
 
-            <div className={style.container}>
+            <div className={style.getInTouch}>
 
                 <Title text={'Get in touch'} color={'white'}/>
 

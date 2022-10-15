@@ -6,39 +6,39 @@
   flex-wrap: wrap;
   font-family: Roboto Mono, monospace;
   padding-top: 40px;
-  background:  transparentize($primaryColor, 0.2);
+  background: transparentize($primaryColor, 0.2);
 
   .avatar_container {
-    display: flex;
+    max-width: 33.3%;
+    object-fit: cover;
     padding: 0 15px;
-    &::after{
+    position: relative;
+
+    &::before {
+      content: '';
       position: absolute;
-      width: 100px;
-      height: 100px;
-      left: -10px;
-      top: -10px;
-      border: 3px solid $accentColor;
+      top: 45px;
+      left: 20px;
+      width: 280%;
+      height: 110%;
+      border: 5px solid $accentColor;
     }
 
     .avatar {
       border-radius: 5px;
       box-shadow: 0 0 27px rgba(96, 96, 96, 0.34);
-      height: 380px;
       object-fit: cover;
-      margin-top: 10px;
+      height: 380px;
       position: relative;
-      top: 40px;
-
-      &:hover {
-        transform: scale(1.2, 1.2);
-      }
+      top: 60px;
+      left: 40px;
     }
   }
 }
 
 .bio {
   color: #fff;
-  padding-left: 30px;
+  padding-left: 60px;
 
   .title {
     @include fontParams(44px, 50px, 700, 10px);

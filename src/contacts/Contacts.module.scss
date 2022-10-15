@@ -6,7 +6,8 @@
 }
 
 .getInTouch {
-    padding-top: 60px;
+    @include sectionWrapper();
+    padding-top: 5px !important;
     background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));;
 }
 

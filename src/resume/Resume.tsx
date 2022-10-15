@@ -40,6 +40,7 @@ export const Resume = () => {
             <div className={style.container}>
 
                 <div className={style.wrapper}>
+
                     <Title text={'Resume'}/>
 
                     <div className={style.resume}>

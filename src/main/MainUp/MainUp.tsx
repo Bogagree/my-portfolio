@@ -3,18 +3,17 @@ import style from './MainUp.module.scss';
 import avatar from '../../assets/img/avatar.jpg';
 import {SocialLinks} from '../SocialLinks/SocialLinks';
 import Typewriter from 'typewriter-effect';
-import {Fade} from "react-awesome-reveal"
+import Tilt from 'react-parallax-tilt';
 
 export const MainUp = () => {
     return (
 
         <div className={style.mainUp}>
-
-            <div className={style.avatar_container}>
-                <Fade delay={500} duration={5500} triggerOnce={true}>
+            <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+                <div className={style.avatar_container}>
                     <img className={style.avatar} src={avatar} alt="avatar"></img>
-                </Fade>
-            </div>
+                </div>
+            </Tilt>
 
             <div className={style.bio}>
 

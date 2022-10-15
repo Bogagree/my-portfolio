@@ -8,6 +8,7 @@ import {FaKeyboard} from 'react-icons/fa'
 import {IoMdPeople} from 'react-icons/io'
 import {DiResponsive} from 'react-icons/di'
 import {TbBrandReactNative} from 'react-icons/tb'
+import {IoShareSocial} from 'react-icons/io5'
 import {
     SiGit,
     SiJest,
@@ -43,12 +44,13 @@ const techSkills = {
 
 const metaSkills = {
     title: 'My Meta skills',
-    description: 'I like exploring the world around by talking to people, learning about their culture and making new connections. Over time I have developed useful skills such as foreng languages, or touch thyping metod. Below  are some of them:',
+    description: 'Besides I\'m interested in the IT field, I have experienced in social media such an Instagram. I like exploring the world around by talking to people and making new connections. Over time I have developed useful skills such as foreign languages, or touch typing method. Below are some of my well developed meta skills:',
     icons: [
-        {icon: <IoMdPeople/>, title: 'Communication'},
-        {icon: <RiEmpathizeFill/>, title: 'Empathy'},
+        {icon: <IoShareSocial/>, title: 'Social media'},
         {icon: <RiEnglishInput/>, title: 'English'},
         {icon: <RiGoogleFill/>, title: 'Googling'},
+        {icon: <IoMdPeople/>, title: 'Communication'},
+        {icon: <RiEmpathizeFill/>, title: 'Empathy'},
         {icon: <AiOutlineSchedule/>, title: 'Planning'},
         {icon: <FaKeyboard/>, title: 'Blind typing'},
     ]
@@ -62,13 +64,12 @@ const personalSkills = {
     ]
 }
 
-
 export const Skills = () => {
 
     return (
+        <section id={'skills'} className={style.container}>
 
-        <section id={'skills'}>
-            <div className={style.container}>
+            <div className={style.skillsBlock}>
 
                 <Title text={'Skills'}/>
 

@@ -6,7 +6,14 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 60px 25px;
+  @include sectionWrapper(60px, 25px);
+
+  @media (max-width: 768px) {
+    @include sectionWrapper(30px, 15px);
+  }
+  @media (max-width: 425px) {
+    border-radius: 0;
+  }
 }
 
 .mainDown p {
@@ -21,6 +28,7 @@
   min-width: 170px;
   @include fontParams(14px, 20px, 600, 0);
   @include flexCenter();
+
   &:hover {
     color: $accentColor;
     text-decoration: underline;
