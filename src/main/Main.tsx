@@ -3,7 +3,7 @@ import {MainUp} from './MainUp/MainUp';
 import style from './Main.module.scss';
 import {MainDown} from './MainDown/MainDown';
 // @ts-ignore (no type declarations for vantajs)
-import TOPOLOGY from 'vanta/dist/vanta.net.min'
+import NET from 'vanta/dist/vanta.net.min'
 import {Header} from '../header/Header';
 
 export const Main = () => {
@@ -13,7 +13,7 @@ export const Main = () => {
 
     useEffect(() => {
         if (!vantaEffect) {
-            setVantaEffect(TOPOLOGY({
+            setVantaEffect(NET({
                 el: myRef.current,
                 mouseControls: true,
                 touchControls: true,
@@ -34,12 +34,14 @@ export const Main = () => {
     }, [vantaEffect])
 
     return (
-        <section id={'main'} className={`${style.main} `} ref={myRef}>
+        <section id={'main'} className={style.main} ref={myRef}>
+
             <div className={style.container}>
                 <Header/>
                 <MainUp/>
                 <MainDown/>
             </div>
+
         </section>
     );
 };

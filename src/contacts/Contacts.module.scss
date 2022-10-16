@@ -2,35 +2,55 @@
 @import '../common/styles/SASS/variables.sass';
 
 .container {
-    @include container()
+  @include container();
+  padding-left: 25px;
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
 }
 
 .getInTouch {
-    @include sectionWrapper();
-    padding-top: 5px !important;
-    background: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));;
+  @include sectionWrapper();
+  padding-top: 5px !important;
+
+  p {
+    padding-bottom: 15px;
+    color: $accentColor;
+  }
+
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 .formWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  opacity: 0.6;
+  background: white;
+  padding: 15px;
+  max-width: 380px;
 }
 
 .input, .textarea {
-    margin-bottom: 15px;
-    width: 280px;
-    background-color: transparent;
-    border-radius: 3px;
-    border: 1px solid mediumpurple;
-    padding: 10px;
-    color: mediumpurple;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Roboto Mono, monospace;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 1px solid $primaryColor;
+  padding: 10px;
+  color: $primaryColor;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono, monospace;
 }
 
 .sendBtn {
-    min-width: 170px;
+  min-width: 170px;
+  border: 1px solid white;
 }
