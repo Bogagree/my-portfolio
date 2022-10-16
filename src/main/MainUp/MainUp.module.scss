@@ -9,7 +9,6 @@
   background: transparentize($primaryColor, 0.2);
 
   .avatar_container {
-    max-width: 33.3%;
     object-fit: cover;
     padding: 0 15px;
     position: relative;
@@ -17,9 +16,9 @@
     &::before {
       content: '';
       position: absolute;
-      top: 45px;
-      left: 20px;
-      width: 280%;
+      top: 42px;
+      left: 28px;
+      width: 90%;
       height: 110%;
       border: 5px solid $accentColor;
     }
@@ -31,7 +30,16 @@
       height: 380px;
       position: relative;
       top: 60px;
-      left: 40px;
+      left: 48px;
+    }
+  }
+
+  @media screen and (max-width: 882px) {
+    flex-direction: column;
+    align-items: center;
+    .avatar_container {
+      top: -20px;
+      left: -30px;
     }
   }
 }
@@ -42,11 +50,11 @@
 
   .title {
     @include fontParams(44px, 50px, 700, 10px);
-    margin-top: 40px;
+    margin-top: 54px;
   }
 
   .position {
-    @include fontParams(16px, 24px, 400, 40px);
+    @include fontParams(16px, 24px, 400, 20px);
   }
 
   .contact_list {
@@ -76,4 +84,18 @@
       }
     }
   }
+
+  @media screen and (max-width: 882px) {
+    .title {
+      margin-top: 80px;
+    }
+
+    .position {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 0 15px;
+    }
 }

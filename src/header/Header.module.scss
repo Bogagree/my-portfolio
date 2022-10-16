@@ -11,6 +11,18 @@
   position: fixed;
   z-index: 100;
   top: 0;
-  left: 0;
+  left: 10px;
   width: 100%;
+}
+
+.visible {
+  transition: top 0.4s ease-out;
+}
+
+.hidden {
+  top: -80px;
+  transition: top 0.4s ease-out;
+  @media screen and (max-width: 882px) {
+    top: 0;
+    }
 }

@@ -34,7 +34,7 @@ export const Main = () => {
     }, [vantaEffect])
 
     return (
-        <section className={`${style.main} `} ref={myRef}>
+        <section id={'main'} className={`${style.main} `} ref={myRef}>
             <div className={style.container}>
                 <Header/>
                 <MainUp/>
