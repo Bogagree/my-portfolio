@@ -19,10 +19,12 @@ export const Header = () => {
 
     return (
         <header className={`${style.header}  ${cls}`}>
+
             <div className={style.container}>
                 <Nav/>
                 <BurgerNav/>
             </div>
+
         </header>
     );
 };

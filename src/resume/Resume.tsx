@@ -53,11 +53,14 @@ export const Resume = () => {
                             improve my English.
                         </p>
                     </div>
+
                 </div>
+
                 <Slide direction={'up'} triggerOnce={true} duration={1500}>
-                <ResumeList listTitle={'Education'} items={education} />
-                <ResumeList listTitle={'Employment'} items={employment}/>
+                    <ResumeList listTitle={'Education'} items={education}/>
+                    <ResumeList listTitle={'Employment'} items={employment}/>
                 </Slide>
+
             </div>
 
         </section>

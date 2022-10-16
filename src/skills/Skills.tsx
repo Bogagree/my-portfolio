@@ -22,6 +22,7 @@ import {
 } from 'react-icons/si';
 import {RiEmpathizeFill, RiEnglishInput, RiGoogleFill} from 'react-icons/ri'
 import {SkillsList} from './SkillsList/SkillsList';
+import {Slide} from 'react-awesome-reveal';
 
 const techSkills = {
     title: 'My Tech Stack',
@@ -73,11 +74,14 @@ export const Skills = () => {
 
                 <Title text={'Skills'}/>
 
-                <SkillsList skills={techSkills}/>
-                <SkillsList skills={metaSkills}/>
-                <SkillsList skills={personalSkills}/>
+                <Slide direction={'up'} triggerOnce={true} duration={1500}>
+                    <SkillsList skills={techSkills}/>
+                    <SkillsList skills={metaSkills}/>
+                    <SkillsList skills={personalSkills}/>
+                </Slide>
 
             </div>
+
         </section>
     )
 }

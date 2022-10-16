@@ -5,6 +5,7 @@ import {Title} from '../common/Components/Title/Title';
 import allThaiHerbs from '../assets/img/projectImg.jpg'
 import socialNetwork from '../assets/img/socialNetwork.jpg'
 import learningCards from '../assets/img/learningCards.jpg'
+import {Slide} from 'react-awesome-reveal';
 
 const myProjects = [
     {
@@ -45,29 +46,34 @@ const Projects: React.FC = () => {
     return (
 
         <section id={'projects'}>
+
             <div className={style.container}>
 
-                <div className={style.projectsBlock}>
+                <Slide direction={'up'} triggerOnce={true} duration={1500}>
+                    <div className={style.projectsBlock}>
 
-                    <Title text={'Projects'}/>
+                        <Title text={'Projects'}/>
 
-                    <div className={style.projects}>
+                        <div className={style.projects}>
 
-                        {myProjects.map(p => <Project
-                            key={p.title}
-                            date={p.date}
-                            title={p.title}
-                            description={p.description}
-                            codeLink={p.codeLink}
-                            link={p.link}
-                            linkTitle={p.linkTitle}
-                            img={p.img}
-                            technologies={p.technologies}
-                        />)}
+                            {myProjects.map(p => <Project
+                                key={p.title}
+                                date={p.date}
+                                title={p.title}
+                                description={p.description}
+                                codeLink={p.codeLink}
+                                link={p.link}
+                                linkTitle={p.linkTitle}
+                                img={p.img}
+                                technologies={p.technologies}
+                            />)}
 
+                        </div>
                     </div>
-                </div>
+                </Slide>
+
             </div>
+
         </section>
     );
 };
