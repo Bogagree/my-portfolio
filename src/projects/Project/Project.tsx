@@ -28,7 +28,7 @@ const Project:React.FC<ProjectType> = (props) => {
 
                 <h3>{props.title}</h3>
 
-                <span className={style.description}>{props.description}</span>
+                <div className={style.description}>{props.description}</div>
 
                 <p className={style.stack}>Used stack:</p>
 

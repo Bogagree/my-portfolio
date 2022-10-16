@@ -37,10 +37,11 @@
   }
 
   .burgerBtn {
-    display: flex;
+    position: absolute;
+    right: 25px;
+    background: $primaryColor;
     margin-top: 24px;
-    justify-content: flex-end;
-    width: 100%;
+    width: 48px;
   }
 
   .show {

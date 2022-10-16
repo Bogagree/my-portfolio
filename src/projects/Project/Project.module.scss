@@ -3,19 +3,25 @@
 
 .projectCard {
   @include flexCenter(space-between);
+  align-items: flex-start;
+  position: relative;
   width: 1110px;
   margin-bottom: 40px;
   border: 2px solid $borderColor;
   background-color: $bgColor;
   transition: box-shadow .3s;
   font-family: Roboto Mono, monospace;
+
   .projectImg {
     @include flexCenter(center, column);
     position: relative;
     height: 393px;
-    width: 42%;
-    background-size: cover;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
     background-position: center;
+
     &::before {
       position: absolute;
       content: '';
@@ -26,10 +32,12 @@
       right: 0;
       opacity: 0.5;
     }
+
     & a:hover {
       border: $accentColor 1px solid;
       opacity: 0.8;
     }
+
     .viewBtn {
       display: block;
       position: relative;
@@ -41,69 +49,95 @@
       color: $turnOverTextColor;
       text-decoration: none;
     }
+
   }
 
   .textContainer {
     width: 52%;
     padding: 50px 25px 40px 25px;
-    @include fontParams(14px,20px,400,0);
+    @include fontParams(14px, 20px, 400, 0);
     color: $secondaryTextColor;
+
     h3 {
-      @include fontParams(14px,20px,700);
+      @include fontParams(14px, 20px, 700, 5px);
       text-transform: uppercase;
       color: $primaryTextColor;
     }
+
     .date {
-      @include fontParams(12px,18px,400,10px);
+      @include fontParams(12px, 18px, 400, 10px);
       text-transform: uppercase;
       color: $secondaryTextColor;
     }
+
     & a:hover {
       color: $accentColor;
     }
+
     .description {
-      @include fontParams(16px,24px,400,45px);
+      @include fontParams(16px, 24px, 400, 5px);
       font-family: Roboto, sans-serif;
     }
+
     .stack {
-      @include fontParams(12px,18px,700);
+      @include fontParams(12px, 18px, 700, 10px);
       text-transform: uppercase;
       color: $primaryTextColor;
     }
+
     .tags {
       padding: 0;
-      gap: 5px;
+      gap: 10px;
       list-style: none;
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 25px;
+
       li {
-        @include fontParams(14px,20px,400,0);
+        @include fontParams(14px, 20px, 400, 0);
         display: inline-block;
         background-color: $bgColor;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
         padding: 5px 10px;
         margin-right: 10px;
         border-radius: 3px;
+
         &:hover {
           cursor: pointer;
           opacity: 0.7;
         }
       }
     }
+
     .linkWrapper {
       display: flex;
       justify-content: end;
     }
+
     .link {
-      @include fontParams(14px,20px,400,0);
+      @include fontParams(14px, 20px, 400, 0);
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
       text-decoration: none;
       color: $primaryColor;
       transition: all .3s;
       cursor: pointer;
-      margin-top: 55px;
+
+
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    @include flexCenter(center, column);
+    .projectImg, .textContainer{
+      width: 100%;
+    }
+    .textContainer{
+      padding: 20px 15px;
     }
   }
 }

@@ -11,16 +11,17 @@
   @media (max-width: 768px) {
     @include sectionWrapper(30px, 15px);
   }
+
   @media (max-width: 425px) {
     border-radius: 0;
   }
+
 }
 
 .mainDown p {
   font-family: Roboto, sans-serif;
   @include fontParams(18px, 30px, 400, 30px);
   color: $primaryTextColor;
-
 }
 
 .downloadBtn {

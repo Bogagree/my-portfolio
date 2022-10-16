@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Projects from "./projects/Projects";
+import {Projects} from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 import {Main} from "./main/Main";
 import {Skills} from "./skills/Skills";
