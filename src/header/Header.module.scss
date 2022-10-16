@@ -5,21 +5,12 @@
   @include container();
 }
 
-
 .header {
   padding: 0 25px 10px 25px;
   transition: all .5s;
   position: fixed;
+  z-index: 100;
+  top: 0;
   left: 0;
   width: 100%;
-}
-
-.visible {
-  transition: top 0.4s ease-out;
-
-}
-
-.hidden {
-  top: -80px;
-  transition: top 0.4s ease-out;
 }

@@ -2,32 +2,57 @@
 @import "../../common/styles/SASS/mixins";
 
 .burgerNav {
-  max-width: 300px;
-  @include flexCenter(space-between, column);
-  flex-wrap: wrap;
-  padding: 40px 0 0 25px;
+  height: 100%;
+  width: 100%;
 
-  .link {
-    @include fontParams(14px, 20px, 700);
-    text-decoration: none;
-    color: $bgColor;
-    font-family: Roboto Mono, monospace;
-    text-transform: uppercase;
+  .burgerNavItems {
+    @include flexCenter(center, column);
+    position: absolute;
+    background-color: $primaryColor;
+    padding: 24px;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0;
+    transform: translate(0, -220px);
+    transition: ease-in 0.7s;
 
-    &:hover {
-      cursor: pointer;
-      color: $accentColor;
-      transition: ease-in-out 0.4s;
-    }
+    .link {
+      @include fontParams(14px, 20px, 700);
+      color: $turnOverTextColor;;
+      font-family: Roboto Mono, monospace;
+      text-transform: uppercase;
 
-    .active {
-      color: $accentColor;
-      background: #7766a1;
+      &:hover {
+        cursor: pointer;
+        color: $accentColor;
+        transition: ease-in-out 0.4s;
+      }
+
+      .active {
+        color: $accentColor;
+        background: #7766a1;
+      }
     }
   }
 
-  @media screen and (min-width: 425px) {
+  .burgerBtn {
+    display: flex;
+    margin-top: 24px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .show {
+    transform: translate(0, 0);
+    transition: ease-in 0.7s;
+    height: 220px;
+  }
+
+
+  @media screen and (min-width: 769px) {
     display: none;
+
   }
 
 }
