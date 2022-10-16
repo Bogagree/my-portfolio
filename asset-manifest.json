@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.08f604e0.css",
-    "main.js": "/my-portfolio/static/js/main.93996d5a.js",
+    "main.css": "/my-portfolio/static/css/main.de6f275f.css",
+    "main.js": "/my-portfolio/static/js/main.5cc3c3e4.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/projectImg.jpg": "/my-portfolio/static/media/projectImg.ee18cf131a449acfaa25.jpg",
     "static/media/learningCards.jpg": "/my-portfolio/static/media/learningCards.3f733a2cbf810bea9a3d.jpg",
     "static/media/socialNetwork.jpg": "/my-portfolio/static/media/socialNetwork.7d218b690860905f11f9.jpg",
+    "static/media/Todolist.jpg": "/my-portfolio/static/media/Todolist.373f93754b625a6bb977.jpg",
     "static/media/avatar.jpg": "/my-portfolio/static/media/avatar.92db1c991e7209ccda1f.jpg",
+    "static/media/axios.svg": "/my-portfolio/static/media/axios.05d0a238f53f3f488b55925f1108adf6.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/VK_Monochrome_Compact_Logo.svg": "/my-portfolio/static/media/VK_Monochrome_Compact_Logo.9330f709cd9bc5039452c4ab2d549baa.svg",
-    "main.08f604e0.css.map": "/my-portfolio/static/css/main.08f604e0.css.map",
-    "main.93996d5a.js.map": "/my-portfolio/static/js/main.93996d5a.js.map",
+    "main.de6f275f.css.map": "/my-portfolio/static/css/main.de6f275f.css.map",
+    "main.5cc3c3e4.js.map": "/my-portfolio/static/js/main.5cc3c3e4.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08f604e0.css",
-    "static/js/main.93996d5a.js"
+    "static/css/main.de6f275f.css",
+    "static/js/main.5cc3c3e4.js"
   ]
 }
