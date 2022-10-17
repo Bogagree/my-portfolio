@@ -26,12 +26,25 @@
 
 .downloadBtn {
   height: 50px;
-  min-width: 170px;
+  width: 200px;
   @include fontParams(14px, 20px, 600, 0);
   @include flexCenter();
+  border: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 15px;
+  color: $turnOverTextColor;
+  background-color: $primaryColor;
+  overflow: hidden;
+
+  svg{
+    margin: 0;
+    width: 40px;
+  }
 
   &:hover {
     color: $accentColor;
+    cursor: pointer;
     text-decoration: underline;
     transition: ease-in-out 0.3s;
   }

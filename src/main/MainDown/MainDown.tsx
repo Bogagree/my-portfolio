@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './MainDown.module.scss';
 import {Title} from '../../common/Components/Title/Title';
-import SiteButton from '../../common/Components/Buttons/Site.Button';
 import {AiOutlineDownload} from 'react-icons/ai';
 
 export const MainDown = () => {
@@ -27,7 +26,7 @@ export const MainDown = () => {
                 </p>
 
                 <div>
-                    <SiteButton className={style.downloadBtn}> <AiOutlineDownload/> Download CV</SiteButton>
+                    <a className={style.downloadBtn} href={'https://drive.google.com/file/d/1FG3kvS5u0BOcseXud45BEoHXDu0X1HeZ/view?usp=sharing'}> <AiOutlineDownload/> Download CV</a>
                 </div>
 
         </div>

@@ -1,5 +1,17 @@
 @import '../../common/styles/SASS/variables';
 
+
+@media screen and (max-width: 425px) {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  svg {
+    margin: 0 5px 5px 0;
+  }
+  }
+}
+
 svg {
   height: auto;
   width: 48px;
@@ -7,11 +19,15 @@ svg {
   transition: ease-in-out 0.7s;
   padding: 10px;
   margin: 0 5px 15px 0;
+
   &:hover {
     opacity: 0.8;
     fill: $accentColor;
   }
+
   &:first-child {
     padding-left: 0;
   }
+
+
 }
