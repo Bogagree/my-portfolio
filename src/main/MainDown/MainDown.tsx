@@ -26,7 +26,7 @@ export const MainDown = () => {
                 </p>
 
                 <div>
-                    <a className={style.downloadBtn} href={'https://drive.google.com/file/d/1FG3kvS5u0BOcseXud45BEoHXDu0X1HeZ/view?usp=sharing'}> <AiOutlineDownload/> Download CV</a>
+                    <a className={style.downloadBtn} href={'https://drive.google.com/file/d/1gG3syTTbgCMr6XZ9RtfQUDrPP-pqzW2z/view?usp=sharing'}> <AiOutlineDownload/> Download CV</a>
                 </div>
 
         </div>

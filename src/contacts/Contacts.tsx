@@ -38,8 +38,6 @@ export const Contacts = () => {
 
     const form = useRef<HTMLFormElement>(null);
 
-
-
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
 
         e.preventDefault();
@@ -52,12 +50,11 @@ export const Contacts = () => {
         )
             .then((result) => {
                 console.log(result.text)
+                form.current && form.current.reset()
                 alert('Your message has been sent successfully!')
             }, (error) => {
                 console.log(error.text);
             });
-        form.current && form.current.reset()
-
     };
 
     return (

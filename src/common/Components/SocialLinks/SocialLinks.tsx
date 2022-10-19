@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './SocialLinks.module.scss';
-import {ReactComponent as VK} from '../../../src/assets/icons/VK_Monochrome_Compact_Logo.svg';
+import {ReactComponent as VK} from '../../../assets/icons/VK_Monochrome_Compact_Logo.svg';
 import {AiFillGithub} from 'react-icons/ai'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {AiFillFacebook} from 'react-icons/ai'

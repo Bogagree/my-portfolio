@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './MainUp.module.scss';
 import avatar from '../../assets/img/avatar.jpg';
-import {SocialLinks} from '../SocialLinks/SocialLinks';
+import {SocialLinks} from '../../common/Components/SocialLinks/SocialLinks';
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
 
