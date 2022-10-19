@@ -6,28 +6,31 @@ import {AiOutlineDownload} from 'react-icons/ai';
 export const MainDown = () => {
     return (
 
-            <div className={style.mainDown}>
+        <div className={style.mainDown}>
 
-                <Title text={'Hi'} color={'#555'}/>
+            <Title text={'Hi'} color={'#555'}/>
 
-                <p>
-                    I'm Junior Frontend developer, meticulous and innovation-focused individual. From 2008 till 2011 I
-                    was working in an engineering company producing plate heat exchangers. During that period, I’ve
-                    gained experience in goods supply phases, including engineering, procurement, construction,
-                    inspection, preparation for shipment and transportation. <br/>
-                    <br/>
-                    For last 10 years I was working in Thailand as a General Manager in the project Thai
-                    Traditional Medicine (drugs/supplements based on herbs and plants). This project gave me the
-                    opportunity to manage teams 50-80 people from different countries Thailand, Russia, Indonesia and
-                    Vietnam. <br/>
-                    <br/>
-                    Currently, seeking further challenges in IT. Skilled at writing well-designed, testable and
-                    efficient code using current best practices in web development.
-                </p>
+            <p>
+                I'm Junior Frontend developer, meticulous and innovation-focused individual. From 2008 till 2011 I
+                was working in an engineering company producing plate heat exchangers. During that period, I’ve
+                gained experience in goods supply phases, including engineering, procurement, construction,
+                inspection, preparation for shipment and transportation. <br/>
+                <br/>
+                For last 10 years I was working in Thailand as a General Manager in the project Thai
+                Traditional Medicine (drugs/supplements based on herbs and plants). This project gave me the
+                opportunity to manage teams 50-80 people from different countries Thailand, Russia, Indonesia and
+                Vietnam. <br/>
+                <br/>
+                Currently, seeking further challenges in IT. Skilled at writing well-designed, testable and
+                efficient code using current best practices in web development.
+            </p>
 
-                <div>
-                    <a className={style.downloadBtn} href={'https://drive.google.com/file/d/1gG3syTTbgCMr6XZ9RtfQUDrPP-pqzW2z/view?usp=sharing'}> <AiOutlineDownload/> Download CV</a>
-                </div>
+            <div>
+                <a className={style.downloadBtn}
+                   href={'https://drive.google.com/file/d/1c3THVX4kIa1u-OvPZvL96KXoIQM73d2I/view?usp=sharing'}>
+                    <AiOutlineDownload/> Download CV
+                </a>
+            </div>
 
         </div>
     );
