@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
             <footer className={style.footer}>
                 <SocialLinks/>
-                <p>2022 Dmitry Bogatirev. All Rights Reserved</p>
+                <p>2022 Dmitry Bogatyrev. All Rights Reserved</p>
             </footer>
     );
 };

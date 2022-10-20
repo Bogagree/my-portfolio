@@ -11,15 +11,10 @@ export const MainDown = () => {
             <Title text={'Hi'} color={'#555'}/>
 
             <p>
-                I'm Junior Frontend developer, meticulous and innovation-focused individual. From 2008 till 2011 I
-                was working in an engineering company producing plate heat exchangers. During that period, I’ve
-                gained experience in goods supply phases, including engineering, procurement, construction,
-                inspection, preparation for shipment and transportation. <br/>
+                I'm Junior Frontend developer, meticulous and innovation-focused. From 2008 till 2011 I
+                was working for engineering company. During that period, I’ve gained experience in goods supply phases, including engineering, procurement, preparation for shipment and etc. <br/>
                 <br/>
-                For last 10 years I was working in Thailand as a General Manager in the project Thai
-                Traditional Medicine (drugs/supplements based on herbs and plants). This project gave me the
-                opportunity to manage teams 50-80 people from different countries Thailand, Russia, Indonesia and
-                Vietnam. <br/>
+                For the last 10 years I was working in Thailand manager of the Thai traditional medicine project  (supplements made of herbs and plants). This project gave me an opportunity to manage a team 80 people based in different countries Thailand, Russia (CIS), Indonesia and Vietnam. <br/>
                 <br/>
                 Currently, seeking further challenges in IT. Skilled at writing well-designed, testable and
                 efficient code using current best practices in web development.
@@ -27,7 +22,7 @@ export const MainDown = () => {
 
             <div>
                 <a className={style.downloadBtn}
-                   href={'https://drive.google.com/file/d/1c3THVX4kIa1u-OvPZvL96KXoIQM73d2I/view?usp=sharing'}>
+                   href={'https://drive.google.com/file/d/1mEyFvQ-ox1mZlkhvwIbdlR5RUvhZ1B59/view?usp=sharing'}>
                     <AiOutlineDownload/> Download CV
                 </a>
             </div>

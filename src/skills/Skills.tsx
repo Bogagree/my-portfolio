@@ -45,7 +45,7 @@ const techSkills = {
 
 const metaSkills = {
     title: 'My Meta skills',
-    description: 'Besides I\'m interested in the IT field, I have experienced in social media such an Instagram. I like exploring the world around by talking to people and making new connections. Over time I have developed useful skills such as foreign languages, or touch typing method. Below are some of my well developed meta skills:',
+    description: 'Besides being interested with the IT field I am experienced with social media such an Instagram. I like exploring the world around by talking to people and making new connections. Over time I have developed useful skills such as foreign languages, or touch typing method. Below are some of my well developed meta skills:',
     icons: [
         {icon: <IoShareSocial/>, title: 'Social media'},
         {icon: <RiEnglishInput/>, title: 'English'},
