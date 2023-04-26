@@ -18,7 +18,7 @@ export const Header = () => {
     const cls = header ? `${style.visible}` : `${style.hidden}`;
 
     return (
-        <header className={`${style.header}  ${cls}`}>
+        <header className={`${style.header} ${cls}`}>
 
             <div className={style.container}>
                 <Nav/>

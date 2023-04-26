@@ -7,20 +7,26 @@ import {Slide} from 'react-awesome-reveal';
 const education = [
     {
         title: 'IT-INCUBATOR',
-        period: 'Mar 2022 - Aug 2022',
+        period: 'Mar 2021 - Sep 2021',
         description: 'React / TS / Redux / SPA Development'
     },
     {
         title: 'National University of Science and Technology "MISIS"  (Moscow Institute of Steel and Alloys)',
         period: '2003-2008',
-        description: 'Engineer\'s Degree, Metal forming proces (pipes) Technology/Technician'
+        description: 'Engineer\'s Degree, Metal forming process (pipes) Technology/Technician'
     }
 ]
 
 const employment = [
     {
+        title: 'IRBIS',
+        period: 'since Nov 2021',
+        position: 'Business owner',
+        description: 'own business, SEO optimisation, HTML, CSS, customer service'
+    },
+    {
         title: 'AllThaiHerbs, Thailand',
-        period: 'since May 2020',
+        period: 'since July 2020',
         position: 'Business owner',
         description: 'own business, SEO optimisation, HTML, CSS, customer service'
     },
