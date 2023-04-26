@@ -21,14 +21,14 @@ const employment = [
     {
         title: 'IRBIS',
         period: 'since Nov 2021',
-        position: 'Business owner',
-        description: 'own business, SEO optimisation, HTML, CSS, customer service'
+        position: 'frontend developer',
+        description: 'own business, '
     },
     {
         title: 'AllThaiHerbs, Thailand',
         period: 'since July 2020',
-        position: 'Business owner',
-        description: 'own business, SEO optimisation, HTML, CSS, customer service'
+        position: 'own business, developer',
+        description: 'own business, SEO, php+VUE'
     },
     {
         title: 'Erawadee, Thailand',
