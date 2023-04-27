@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.f8638c01.css",
-    "main.js": "/my-portfolio/static/js/main.247312ca.js",
+    "main.js": "/my-portfolio/static/js/main.68686a14.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/projectImg.jpg": "/my-portfolio/static/media/projectImg.ee18cf131a449acfaa25.jpg",
     "static/media/learningCards.jpg": "/my-portfolio/static/media/learningCards.3f733a2cbf810bea9a3d.jpg",
@@ -12,11 +12,11 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/VK_Monochrome_Compact_Logo.svg": "/my-portfolio/static/media/VK_Monochrome_Compact_Logo.9330f709cd9bc5039452c4ab2d549baa.svg",
     "main.f8638c01.css.map": "/my-portfolio/static/css/main.f8638c01.css.map",
-    "main.247312ca.js.map": "/my-portfolio/static/js/main.247312ca.js.map",
+    "main.68686a14.js.map": "/my-portfolio/static/js/main.68686a14.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8638c01.css",
-    "static/js/main.247312ca.js"
+    "static/js/main.68686a14.js"
   ]
 }
