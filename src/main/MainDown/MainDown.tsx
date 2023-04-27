@@ -11,7 +11,7 @@ export const MainDown = () => {
             <Title text={'Hi'} color={'#555'}/>
 
             <p>
-                I'm Junior Frontend developer, meticulous and innovation-focused. From 2008 till 2011 I
+                I'm frontend developer, meticulous and innovation-focused. From 2008 till 2011 I
                 was working for engineering company. During that period, I’ve gained experience in goods supply phases, including engineering, procurement, preparation for shipment and etc. <br/>
                 <br/>
                 For the last 10 years I was working in Thailand manager of the Thai traditional medicine project  (supplements made of herbs and plants). This project gave me an opportunity to manage a team 80 people based in different countries Thailand, Russia (CIS), Indonesia and Vietnam. <br/>
@@ -22,7 +22,7 @@ export const MainDown = () => {
 
             <div>
                 <a className={style.downloadBtn}
-                   href={'https://drive.google.com/file/d/1mEyFvQ-ox1mZlkhvwIbdlR5RUvhZ1B59/view?usp=sharing'}>
+                   href={'https://google.com/'}>
                     <AiOutlineDownload/> Download CV
                 </a>
             </div>
