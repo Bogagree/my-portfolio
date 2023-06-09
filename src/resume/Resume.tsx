@@ -22,13 +22,13 @@ const employment = [
         title: 'IRBIS',
         period: 'since Nov 2021',
         position: 'frontend developer',
-        description: 'own business, '
+        description: 'Development of new features, refactoring and code optimization. Main stack React, NextJS, TypeScript, Redux / Redux toolkit, MUI, emotion, styled-components, SCSS, SEO, CMS payload (NextJS). '
     },
     {
         title: 'AllThaiHerbs, Thailand',
         period: 'since July 2020',
         position: 'own business, developer',
-        description: 'own business, SEO, php+VUE'
+        description: 'HTML/CSS/SCSS site layout, product maintenance, hosting site installation, frontend writing, optimization and error detection / debugging, writing unit tests. SEO promotion. Working with CMS WordPress, Moguta, OpenCart, Tilda. SEO, php+VUE'
     },
     {
         title: 'Erawadee, Thailand',
